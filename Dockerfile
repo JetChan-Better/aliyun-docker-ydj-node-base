@@ -2,6 +2,8 @@ FROM centos:7.0.1406
 MAINTAINER vegawong <vegawong@163.com>
 
 RUN yum -y update && \
+    yum remove fakesystemd && \
+    yum -y install systemd && \
     yum -y install wget && \
     yum install -y tar.x86_64 && \
     yum -y install which && \
