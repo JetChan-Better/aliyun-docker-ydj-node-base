@@ -19,7 +19,7 @@ RUN export PATH="/root/.nvm:$PATH" && bash -l -c "nvm install v6.5.0"
 RUN bash -l -c "npm install -g yarn"
 
 # 设置PATH
-ENV PATH /path/to/bin/folder:$PATH
+ENV PATH /root/.nvm/versions/node/v6.5.0/bin:$PATH
 
 
 
