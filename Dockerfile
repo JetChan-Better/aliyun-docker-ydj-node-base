@@ -20,5 +20,7 @@ RUN bash -l -c "npm install -g yarn"
 
 # 设置PATH
 RUN echo "export PATH=/root/.nvm/versions/node/v6.5.0/bin:$PATH" >> /etc/profile
+RUN source /etc/profile
+
 
 
