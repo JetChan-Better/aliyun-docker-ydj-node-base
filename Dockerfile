@@ -21,6 +21,14 @@ RUN bash -l -c "npm install -g yarn"
 # 设置PATH
 ENV PATH /root/.nvm/versions/node/v6.5.0/bin:$PATH
 
+# Copy over private key, and set permissions
+RUN mkdir /root/.ssh
+ADD id_rsa /root/.ssh/id_rsa
+ADD id_rsa.pub /root/.ssh/id_rsa.pub
+RUN chmod 700 /root/.ssh/id_rsa
+RUN chmod 700 /root/.ssh/id_rsa.pub
+RUN chown -R root:root /root/.ssh
+
 
 
 
