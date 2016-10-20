@@ -13,9 +13,9 @@ RUN yum -y remove fakesystemd && \
 RUN curl -o- https://raw.githubusercontent.com/creationix/nvm/v0.32.1/install.sh | bash
 
 # nvm 安装node v6.5.0
-RUN export PATH="/root/.nvm:$PATH" && bash -l -c "NVM_NODEJS_ORG_MIRROR=https://npm.taobao.org/mirrors/node nvm install v6.5.0"
+RUN export PATH="/root/.nvm:$PATH" && bash -l -c "nvm install v6.5.0"
 
 # 安装 yarn
-RUN bash -l -c "npm install -g yarn --registry=https://registry.npm.taobao.org"
+RUN bash -l -c "npm install -g yarn"
 
 
