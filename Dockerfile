@@ -25,8 +25,10 @@ ENV PATH /root/.nvm/versions/node/v6.5.0/bin:$PATH
 RUN mkdir /root/.ssh
 ADD id_rsa /root/.ssh/id_rsa
 ADD id_rsa.pub /root/.ssh/id_rsa.pub
+ADD known_hosts /root/.ssh/known_hosts
 RUN chmod 700 /root/.ssh/id_rsa
 RUN chmod 700 /root/.ssh/id_rsa.pub
+RUN chmod 700 /root/.ssh/known_hosts
 RUN chown -R root:root /root/.ssh
 
 
