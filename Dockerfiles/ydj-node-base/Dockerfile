@@ -11,6 +11,9 @@ ADD ../../.ssh /root/.ssh
 RUN chmod 700 /root/.ssh/*
 RUN chown -R root:root /root/.ssh
 
+# 安装front-end-util
+RUN mdkir /root/tools
+RUN cd /root/tools && git clone git@gitlab.jingzhuan.cn:huangxiongwei/front-end-util.git && yarn link
 
 
 
