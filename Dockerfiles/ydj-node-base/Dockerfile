@@ -7,7 +7,7 @@ RUN npm install --registry=https://registry.npm.taobao.org -g yarn
 RUN yarn config set registry https://registry.npm.taobao.org
 
 # Copy over private key, and set permissions
-ADD .ssh /root/.ssh
+ADD ../../.ssh /root/.ssh
 RUN chmod 700 /root/.ssh/*
 RUN chown -R root:root /root/.ssh
 
