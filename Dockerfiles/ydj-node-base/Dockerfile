@@ -13,7 +13,10 @@ RUN chown -R root:root /root/.ssh
 
 # 安装front-end-util
 RUN mkdir /root/tools
-RUN cd /root/tools && git clone git@gitlab.jingzhuan.cn:huangxiongwei/front-end-util.git && yarn link
+RUN cd /root/tools && \
+    git clone git@gitlab.jingzhuan.cn:huangxiongwei/front-end-util.git && \
+    cd front-end-util && \
+    yarn link
 
 
 
