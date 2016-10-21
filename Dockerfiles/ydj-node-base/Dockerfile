@@ -22,5 +22,7 @@ RUN cd /root/tools && \
 # 安装pm2(nodejs应用托管和部署)
 RUN yarn global add pm2
 
+# 安装 webpack
+RUN yarn global add webpack
 
 
