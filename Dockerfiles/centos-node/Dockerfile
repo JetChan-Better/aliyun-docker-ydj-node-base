@@ -8,6 +8,7 @@ RUN yum -y remove fakesystemd && \
     yum -y install which && \
     yum -y install git && \
     yum -y install gcc automake autoconf libtool make && \
+    yum -y install gcc gcc-c++ && \
     yum clean all
 
 # 下载nvm
