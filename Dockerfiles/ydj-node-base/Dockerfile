@@ -16,7 +16,8 @@ RUN mkdir /root/tools
 RUN cd /root/tools && \
     git clone git@gitlab.jingzhuan.cn:huangxiongwei/front-end-util.git && \
     cd front-end-util && \
-    yarn link
+    yarn && \
+    npm link
 
 
 
