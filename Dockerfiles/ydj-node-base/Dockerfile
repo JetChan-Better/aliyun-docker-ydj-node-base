@@ -19,5 +19,8 @@ RUN cd /root/tools && \
     yarn && \
     npm link
 
+# 安装pm2(nodejs应用托管和部署)
+RUN yarn global add pm2
+
 
 
