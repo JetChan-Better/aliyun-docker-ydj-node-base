@@ -1,4 +1,4 @@
-FROM registry.cn-hangzhou.aliyuncs.com/vega/centos-node
+FROM registry.cn-hangzhou.aliyuncs.com/vega/centos-node:v6.5.0
 MAINTAINER vegawong <vegawong@163.com>
 
 
